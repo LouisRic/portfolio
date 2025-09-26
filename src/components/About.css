@@ -1,0 +1,73 @@
+/* About Component Styles */
+.about {
+  padding: 6rem 0;
+  background: var(--gray-100);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-main {
+  text-align: left;
+}
+
+.about-intro {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+}
+
+.about-cta {
+  margin-top: 2rem;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.detail-group {
+  border-left: 3px solid var(--border-color);
+  padding-left: 1.5rem;
+}
+
+.detail-group h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-group span {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-intro {
+    font-size: 1.1rem;
+  }
+}

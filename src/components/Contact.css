@@ -1,0 +1,59 @@
+/* Contact Component Styles */
+.contact {
+  padding: 6rem 0;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  text-align: center;
+  max-width: 600px;
+}
+
+.contact-info h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.contact-info p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.contact-item strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.contact-item span {
+  color: var(--text-secondary);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .contact-info {
+    padding: 0 1rem;
+  }
+}

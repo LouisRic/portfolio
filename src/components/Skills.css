@@ -1,0 +1,139 @@
+/* Skills Component Styles */
+.skills {
+  padding: 6rem 0;
+  background: var(--gray-100);
+}
+
+.skills-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.skills-title-box {
+  border: 3px solid var(--primary-color);
+  padding: 1rem 3rem;
+  background: var(--white);
+}
+
+.skills-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.skill-category {
+  text-align: center;
+}
+
+.category-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-icon-container {
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.skill-icon-container:hover {
+  transform: translateY(-2px);
+}
+
+.skill-icon-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.skill-icon-emoji {
+  font-size: 2.5rem;
+}
+
+.skill-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .skills-title-box {
+    padding: 0.8rem 2rem;
+  }
+  
+  .skills-title {
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 1rem;
+  }
+  
+  .skill-icon-container {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .skill-icon-img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .skill-icon-emoji {
+    font-size: 2rem;
+  }
+  
+  .skill-name {
+    font-size: 0.75rem;
+  }
+}
