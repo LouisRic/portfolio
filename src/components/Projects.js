@@ -86,12 +86,11 @@ const Projects = () => {
   const [itemsPerView, setItemsPerView] = useState(getItemsPerView());
   const maxIndex = Math.max(0, projects.length - itemsPerView);
 
-  // Handle window resize
   React.useEffect(() => {
     const handleResize = () => {
       const newItemsPerView = getItemsPerView();
       setItemsPerView(newItemsPerView);
-      setCurrentIndex(0); // Reset to first slide on resize
+      setCurrentIndex(0);
     };
 
     window.addEventListener("resize", handleResize);
@@ -104,6 +103,17 @@ const Projects = () => {
 
   const prevSlide = () => {
     setCurrentIndex((prev) => Math.max(prev - 1, 0));
+  };
+
+  // Calculate proper transform value considering gaps
+  const getTransformValue = () => {
+    if (itemsPerView === 1) {
+      // Mobile: Move by full container width
+      return currentIndex * 100;
+    } else {
+      // Desktop/Tablet: Use original calculation
+      return currentIndex * (100 / itemsPerView);
+    }
   };
 
   return (
@@ -123,9 +133,7 @@ const Projects = () => {
             <div
               className="projects-track"
               style={{
-                transform: `translateX(-${
-                  currentIndex * (100 / itemsPerView)
-                }%)`,
+                transform: `translateX(-${getTransformValue()}%)`,
               }}
             >
               {projects.map((project) => (

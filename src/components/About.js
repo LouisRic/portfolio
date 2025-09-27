@@ -12,16 +12,33 @@ const About = () => {
         <div className="about-content">
           <div className="about-main">
             <p className="about-intro">
-              Hi, I'm Louis Ricardo, a Computer Science student at BINUS University with a focus on software engineering and streaming technologies. I specialize in building web applications with strong skills in front-end and back-end development, including API integration.
+              Hi, I'm Louis Ricardo, a Computer Science student at BINUS
+              University with a focus on software engineering and streaming
+              technologies. I specialize in building web applications with
+              strong skills in front-end and back-end development, including API
+              integration.
             </p>
             <p className="about-description">
-              I'm particularly passionate about creating streaming solutions and ensuring seamless integration between different systems. Throughout my studies, I've worked on projects that involve building efficient web apps and optimizing streaming functionalities.
+              I'm particularly passionate about creating streaming solutions and
+              ensuring seamless integration between different systems.
+              Throughout my studies, I've worked on projects that involve
+              building efficient web apps and optimizing streaming
+              functionalities.
             </p>
             <p className="about-description">
-              I enjoy solving technical challenges and creating robust applications. Thanks for visiting my portfolio, and feel free to reach out if you'd like to collaborate!
+              I enjoy solving technical challenges and creating robust
+              applications. Thanks for visiting my portfolio, and feel free to
+              reach out if you'd like to collaborate!
             </p>
             <div className="about-cta">
-              <button className="btn btn-primary">Download CV</button>
+              <a
+                href="https://binusianorg-my.sharepoint.com/personal/louis_ricardo001_binus_ac_id/_layouts/15/guestaccess.aspx?share=EqrwhwKc-dhDscpvM4oPRZgBysec_0uRaNo4c6hlU2_Tyg&e=Uh1djR"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
+                Download CV
+              </a>
             </div>
           </div>
           <div className="about-details">
