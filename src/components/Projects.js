@@ -27,12 +27,14 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Weather Dashboard",
+      title:
+        "AI-Based Simplification of Translated Medical Texts Using mBART and mT5 on Indonesian Biomedical Abstracts",
       description:
-        "A responsive weather dashboard with location-based forecasts",
-      technologies: ["JavaScript", "API Integration", "CSS3"],
-      image: "/assets/project3.jpg",
-      githubLink: "",
+        "An AI research paper on comparing model for simplifying translated medical texts",
+      technologies: ["Python", "PyTorch", "Transformers", "mBART", "mT5"],
+      image: "/assets/ResearchPaper.png",
+      githubLink:
+        "https://binusianorg-my.sharepoint.com/personal/louis_ricardo001_binus_ac_id/_layouts/15/guestaccess.aspx?share=EcfKak3n8n5AnfPFeRgjSj8BuEmDMNfTHE_gImsCicHkJA&e=arpr1G",
       liveLink: "",
     },
     {
